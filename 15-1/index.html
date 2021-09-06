@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L-15</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+</head>
+<body>
+    <div class="signup-container">        
+        <div class="signup-wrapper">
+            <div class="main-text-container">
+                <span class="main-text"><h1>Create your account</h1></span>                
+            </div>
+            <div class="form-wrapper">
+                <form name="userName-Email">
+                    <p><span>First Name</span></p>
+                    <input type="text" name="userFirstName" required>
+                    <p><span>Second Name</span></p>
+                    <input type="text" name="userSecondName" required>
+                    <p><span>Email</span></p>
+                    <input type="email" name="userEmail" required>
+                    <div id="error"></div>
+                </form>
+                <form name="userSex">                    
+                    <input type="radio" name="sex" id="radioMan" value="man" checked>
+                    <label for="radioMan"><span>Man</span></label>
+                    <input type="radio" name="sex" id="radioWoman" value="woman">
+                    <label for="radioWoman"><span>Woman</span></label>                    
+                </form>
+                <form name="position">
+                    <p><span>Position</span></p>
+                    <select name="positions">
+                        <option value=""><span>Position...</span>...</option>
+                        <option value="Frontend"><span>Frontend</span></option>
+                        <option value="Backend"><span>Backend</span></option>
+                        <option value="QC/QA"><span>QC/QA</span></option>
+                    </select>
+                </form>
+                <form name="agreevemant">
+                    <div class="checker-wrapper">
+                        <input type="checkbox" name="userAgreevemant" id="agree">
+                        <label for="agree"><span>I agree all statements in Terms of service</span></label>                        
+                    </div>
+                    <input type="button" value="Sign Up" class="signUp" disabled>
+                </form>
+            </div>
+        </div>
+        <div class="info-about-user-after-signup">
+            <div class="top-color-block"></div>
+            <div class="user-img-wrapper">
+                <div class="user-img man"></div>
+            </div>
+            <div class="info-about-user">
+                <div class="fitstname-secondname-wrapper">
+                    <span class="first-name"></span>
+                    <span class="second-name"></span>
+                </div>
+                <div class="email-wrapper">
+                    <span class="email"></span>
+                </div>
+                <div class="direction-wrapper">
+                    <span class="direction"></span>
+                </div>
+            </div>
+            <input type="reset" value="Sign Out" class="signOut">
+            <div class="about-user-footer">                
+                <div class="contacts-wrapper">
+                    <div class="icon-wrapper facebook"><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></i></div>
+                    <div class="icon-wrapper github"><a href="https://github.com"><i class="fab fa-github"></i></a></div>
+                    <div class="icon-wrapper linkedin"><a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
